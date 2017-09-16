@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="parking">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parking</title>
+    <script src="bundle.js"></script>
+</head>
+
+<body ng-controller="parkingCtrl">
+    <h3>Parking</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Plate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="car in cars">
+                <td>{{car.plate}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="text" name="car-plate" id="inpte-car-plate" ng-model="car.plate">
+    <button ng-click="park(car)">Park</button>
+</body>
+
+</html>
