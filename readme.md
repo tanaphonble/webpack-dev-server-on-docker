@@ -8,7 +8,7 @@
 
     docker run -d -p <local port>:8080 --name <container name> <image name>
 
-3. go to http://localhost:&lt;local port>
+3. go to http://localhost:<local port>
 ---
 
 ### to edit file in container
