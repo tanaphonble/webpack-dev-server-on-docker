@@ -1,12 +1,8 @@
 ### run webpack-dev-server from docker
 ---
-1.
+1. ```docker build -t <image name> /path/Dockerfile```
 
-    docker build -t <image name> /path/Dockerfile
-
-2.
-
-    docker run -d -p <local port>:8080 --name <container name> <image name>
+2. ```docker run -d -p <local port>:8080 --name <container name> <image name>```
 
 3. go to ```http://localhost:<local port>```
 ---
