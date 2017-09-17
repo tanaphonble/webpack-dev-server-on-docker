@@ -4,9 +4,17 @@
     "start": "webpack-dev-server --host 0.0.0.0"
   },
   "dependencies": {
-    "angular": "^1.6.6"
+    "angular": "^1.6.6",
+    "angular-sanitize": "^1.6.6"
   },
   "devDependencies": {
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
   }

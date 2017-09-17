@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="parking">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parking</title>
+    <script src="../dist/homepage/bundle.js"></script>
+    <link rel="stylesheet" href="../dist/homepage/base.css">
+</head>
+
+<body ng-controller="parkingCtrl">
+    <h3 ng-bind-html="appTitle"></h3>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th class="column-name">Plate</th>
+                <th class="column-name">Entrance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="car in cars" ng-class="{selected: car.selected}">
+                <td><input type="checkbox" ng-model="car.selected"></td>
+                <td>{{car.plate}} </td>
+                <td>{{car.entrance}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <input placeholder="What's the place?" type="text" name="car-plate" id="inpte-car-plate" ng-model="car.plate">
+    <button ng-disabled="!car.plate" ng-click="park(car)">Park</button>
+</body>
+
+</html>

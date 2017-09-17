@@ -1,0 +1,10 @@
+$selected-row-color: #FAFAD2;
+
+.column-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.selected {
+    background-color: $selected-row-color;
+}
